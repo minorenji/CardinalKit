@@ -823,7 +823,7 @@ DEPENDENCIES:
   - CardinalKit (from `../`)
   - GoogleSignIn (~> 6)
   - Granola (from `https://github.com/CardinalKit/Granola.git`, commit `9e0b287`)
-  - ResearchKit (from `https://github.com/ResearchKit/ResearchKit.git`, tag `2.2.9-dev`)
+  - ResearchKit (from `https://github.com/ResearchKit/ResearchKit.git`, tag `2.2.10-dev`)
 
 SPEC REPOS:
   trunk:
@@ -869,7 +869,7 @@ EXTERNAL SOURCES:
     :git: https://github.com/CardinalKit/Granola.git
   ResearchKit:
     :git: https://github.com/ResearchKit/ResearchKit.git
-    :tag: 2.2.9-dev
+    :tag: 2.2.10-dev
 
 CHECKOUT OPTIONS:
   Granola:
@@ -877,7 +877,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/CardinalKit/Granola.git
   ResearchKit:
     :git: https://github.com/ResearchKit/ResearchKit.git
-    :tag: 2.2.9-dev
+    :tag: 2.2.10-dev
 
 SPEC CHECKSUMS:
   abseil: ebe5b5529fb05d93a8bdb7951607be08b7fa71bc
@@ -917,6 +917,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Zip: b3fef584b147b6e582b2256a9815c897d60ddc67
 
-PODFILE CHECKSUM: 188dda7f6732ea23699ef6c0faa04938557daa58
+PODFILE CHECKSUM: 72999d21b832b7293d245cf60193978b6da0e46f
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.12.1
