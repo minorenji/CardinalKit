@@ -16,7 +16,7 @@ import UIKit
 struct OnboardingUIView: View {
     let color: Color
     let config = CKPropertyReader(file: "CKConfiguration")
-    @State var showingOnboard = false
+    @State var showingSignup = false
     @State var showingLogin = false
     
     var onComplete: (() -> Void)?
@@ -51,15 +51,16 @@ struct OnboardingUIView: View {
                 .padding(.trailing, Metrics.paddingHorizontalMain)
 
             Spacer()
-
-            OnboardingPageView()
+            
+            
+            // OnboardingPageView()
             
             HStack {
                 Spacer()
                 Button(action: {
-                    self.showingOnboard.toggle()
+                    self.showingSignup.toggle()
                 }, label: {
-                     Text("Join Study")
+                     Text("Sign Up")
                         .padding(Metrics.paddingButtonLabel)
                         .frame(maxWidth: .infinity)
                         .foregroundColor(.white)
@@ -70,12 +71,12 @@ struct OnboardingUIView: View {
                 .padding(.leading, Metrics.paddingHorizontalMain)
                 .padding(.trailing, Metrics.paddingHorizontalMain)
                 .sheet(
-                    isPresented: $showingOnboard,
+                    isPresented: $showingSignup,
                     onDismiss: {
                         self.onComplete?()
                     },
                     content: {
-                        OnboardingViewController().ignoresSafeArea(edges: .all)
+                        SignupUserViewController().ignoresSafeArea(edges: .all)
                     }
                 )
                 Spacer()
