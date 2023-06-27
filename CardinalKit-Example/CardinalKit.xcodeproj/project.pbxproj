@@ -90,6 +90,8 @@
 		8EA664B42594387900B6A45A /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA664B32594387900B6A45A /* Errors.swift */; };
 		8EBE6F9C24B3C0E60093D07C /* AppDelegate+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBE6F9B24B3C0E60093D07C /* AppDelegate+CardinalKit.swift */; };
 		960928310009545249E5DE94 /* Pods_CardinalKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848E4C0F4BAF1C0A28D2FA4F /* Pods_CardinalKit_Example.framework */; };
+		B799C5DB2A4B859700803FCF /* SignupUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B799C5DA2A4B859700803FCF /* SignupUserViewController.swift */; };
+		B799C5DE2A4B8AF000803FCF /* ScanningUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B799C5DD2A4B8AF000803FCF /* ScanningUIView.swift */; };
 		E235077724F7082700CC1899 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235077624F7082700CC1899 /* SceneDelegate.swift */; };
 		E2680B1B260A72DD00B755EA /* LoginExistingUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2680B1A260A72DD00B755EA /* LoginExistingUserViewController.swift */; };
 		E29143FC24E74AD100EE97B2 /* LaunchUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29143FB24E74AD100EE97B2 /* LaunchUIView.swift */; };
@@ -213,6 +215,8 @@
 		8EA664B1259422E400B6A45A /* CKCareKitRemoteSyncWithFirestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCareKitRemoteSyncWithFirestore.swift; sourceTree = "<group>"; };
 		8EA664B32594387900B6A45A /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		8EBE6F9B24B3C0E60093D07C /* AppDelegate+CardinalKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CardinalKit.swift"; sourceTree = "<group>"; };
+		B799C5DA2A4B859700803FCF /* SignupUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupUserViewController.swift; sourceTree = "<group>"; };
+		B799C5DD2A4B8AF000803FCF /* ScanningUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningUIView.swift; sourceTree = "<group>"; };
 		E235077624F7082700CC1899 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E2680B1A260A72DD00B755EA /* LoginExistingUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginExistingUserViewController.swift; sourceTree = "<group>"; };
 		E29143FB24E74AD100EE97B2 /* LaunchUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchUIView.swift; sourceTree = "<group>"; };
@@ -401,6 +405,7 @@
 				8E6E1E0A2534FF640024B8DF /* OnboardingViewController+Coordinator.swift */,
 				8E6E1E13253520440024B8DF /* PasscodeViewController.swift */,
 				E2680B1A260A72DD00B755EA /* LoginExistingUserViewController.swift */,
+				B799C5DA2A4B859700803FCF /* SignupUserViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -482,6 +487,7 @@
 				8E0A4399244A4A0400656518 /* Onboarding */,
 				8E9CDEA525915F6600C8A228 /* Schedule */,
 				8E9CDEB42591818200C8A228 /* Care Team */,
+				B799C5DC2A4B8A7100803FCF /* Scanning */,
 				8E0A438D244A4A0400656518 /* Tasks */,
 				8E0A4379244A4A0400656518 /* Profile */,
 			);
@@ -571,6 +577,14 @@
 				2E6EEC216C1CB6294D491464 /* Pods-CardinalKit_Example.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B799C5DC2A4B8A7100803FCF /* Scanning */ = {
+			isa = PBXGroup;
+			children = (
+				B799C5DD2A4B8AF000803FCF /* ScanningUIView.swift */,
+			);
+			path = Scanning;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -865,10 +879,12 @@
 				8E9CDFAE2592B79900C8A228 /* Metrics.swift in Sources */,
 				27653A13272A2E7700D74E83 /* LocalTaskListItemView.swift in Sources */,
 				8E6E1E092534F4100024B8DF /* OnboardingViewController.swift in Sources */,
+				B799C5DE2A4B8AF000803FCF /* ScanningUIView.swift in Sources */,
 				8E7FFFB425DCE9B7002982B4 /* CKUploadToGCPTaskViewControllerDelegate.swift in Sources */,
 				2FFFA2CC29024EFD009D289D /* ORKNavigableOrderedTask+FHIR.swift in Sources */,
 				2FFFA2C829024EFD009D289D /* ORKTaskResult+FHIR.swift in Sources */,
 				8EBE6F9C24B3C0E60093D07C /* AppDelegate+CardinalKit.swift in Sources */,
+				B799C5DB2A4B859700803FCF /* SignupUserViewController.swift in Sources */,
 				8E0A43B9244A4A0400656518 /* AppDelegate.swift in Sources */,
 				8EA664232592E57200B6A45A /* SensorsDemoUIView.swift in Sources */,
 				2FFFA2CB29024EFD009D289D /* NavigationRules.swift in Sources */,

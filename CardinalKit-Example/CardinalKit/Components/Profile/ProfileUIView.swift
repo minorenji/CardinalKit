@@ -21,21 +21,15 @@ struct ProfileUIView: View {
             Text("Profile").font(.system(size: 25, weight: .bold))
             List {
                 Section {
-                    PatientIDView()
-                }.listRowBackground(Color.white)
-
-                Section {
                     if config["Health Records"]?["Enabled"] as? Bool == true {
                         SendRecordsView()
                     }
                     ChangePasscodeView()
-                    HelpView(site: config.read(query: "Website") ?? "https://cardinalkit.org")
                 }
 
                 Section {
                     ReportView(color: self.color, email: config.read(query: "Email") ?? "cardinalkit@stanford.edu")
                     SupportView(color: self.color, phone: config.read(query: "Phone") ?? "123-456-7890")
-                    DocumentView()
                 }
 
                 Section {
